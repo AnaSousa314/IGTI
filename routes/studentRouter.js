@@ -63,8 +63,7 @@ app.delete('/student/:id', async (req,res)=>{
 });
 
 //Criação de um novo branch, alteração a partir daqui
-/*
-Exclui rota de put atraves de um branch no proprio gitHub
+
 app.put('/student/:id', async (req,res)=>{
     try {
         const id = req.params.id;
@@ -78,6 +77,5 @@ app.put('/student/:id', async (req,res)=>{
         
     }
 });
-*/
 
 export {app as studentRouter};

@@ -5,7 +5,8 @@ import mongoose from 'mongoose'
 import {studentRouter} from './routes/studentRouter.js'
 
 //conectar ao mongodb pelo mongoose
-require('dotenv').config();
+//require('dotenv').config();
+//Digite no terminal node -r dotenv/config --experimental-modules app.js   para startar 
 
  
 (async ()=>{

@@ -65,19 +65,19 @@ app.delete('/student/:id', async (req,res)=>{
 //Criação de um novo branch, alteração a partir daqui
 
 
-app.put('/student/:id', async (req,res)=>{
-    try {
-        const id = req.params.id;
+// app.put('/student/:id', async (req,res)=>{
+//     try {
+//         const id = req.params.id;
         
-        const student = await studentModel.findByIdAndUpdate({_id: id}, req.body, {new: true})
+//         const student = await studentModel.findByIdAndUpdate({_id: id}, req.body, {new: true})
 
-        res.send(student)
+//         res.send(student)
 
-    } catch (error) {
-        res.status(500).send(error)
+//     } catch (error) {
+//         res.status(500).send(error)
         
-    }
-});
+//     }
+// });
 
 
 export {app as studentRouter};
